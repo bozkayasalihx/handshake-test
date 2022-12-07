@@ -1,0 +1,3 @@
+interface IId {
+    id: number;
+}

@@ -1,0 +1,13 @@
+{
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "profile": "Profile",
+    "account": "Account",
+    "required": "Gerekli",
+    "invalidEmail": "Invalid Email Adress",
+    "invalidUsername": "Invalid Username",
+    "invalidPassword": "Invalid Password",
+    "chooseAuthority": "Choose Authority",
+    "upload_invoice": "Upload an invoice"
+}

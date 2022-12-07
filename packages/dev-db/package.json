@@ -1,0 +1,16 @@
+{
+    "name": "dev-db",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "salih bozkaya",
+    "license": "MIT",
+    "dependencies": {
+        "tsconfig": "*"
+    },
+    "scripts": {
+        "dev-db": "docker compose up -d",
+        "dev-db-build": "docker compose up --build -d",
+        "dev-down": "docker compose down",
+        "dev-down-v": "docker compose down -v "
+    }
+}

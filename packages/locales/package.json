@@ -1,0 +1,15 @@
+{
+    "name": "locales",
+    "version": "1.0.0",
+    "main": "index.ts",
+    "license": "MIT",
+    "devDependencies": {
+        "i18next": "^21.7.1",
+        "i18next-browser-languagedetector": "^6.1.4",
+        "react-i18next": "^11.16.9"
+    },
+    "files": [
+        "en.json",
+        "tr.json"
+    ]
+}

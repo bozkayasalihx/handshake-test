@@ -1,0 +1,17 @@
+export { default as advanceRoute } from "./Advance/advanceRoute";
+export { default as BuyerSiteRoute } from "./Buyer/BuyerSiteRoute";
+export { default as buyerRoute } from "./Buyer/buyersRoute";
+export { default as dealerRoute } from "./Dealer/dealerRoute";
+export { default as DealerSiteRoute } from "./Dealer/dealerSiteRoute";
+export { default as depositRoute } from "./Deposit/depositRoute";
+export { default as PSIUploadProcess } from "./FileUpload/PSIUploadProcess";
+export { default as VIUploadProcess } from "./FileUpload/VIUploadProcess";
+export { default as invoiceRoute } from "./Invoice/invoiceRoute";
+export { default as meRoute } from "./Me/MeRoute";
+export { default as productRoute } from "./Product/ProductRoute";
+export { default as relationRoute } from "./Relations/relationRoute";
+export { default as userRoute } from "./User/Users";
+export { default as vdsbsRoute } from "./Vdsbs/vdsbsRoute";
+export { default as VendorRegionRoute } from "./Vendor/VendorRegionRoute";
+export { default as vendorRoute } from "./Vendor/vendorRoute";
+export { default as paymentRoute } from "./Payment/paymentRoute";

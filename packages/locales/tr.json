@@ -1,0 +1,13 @@
+{
+    "login": "Giris Yap",
+    "register": "Kayit Ol",
+    "logout": "Cikis Yap",
+    "profile": "Profile",
+    "account": "Hesap",
+    "required": "Required",
+    "invalidEmail": "Gecersiz Email!",
+    "invalidUsername": "Gecersiz Kullanici Adi",
+    "invalidPassword": "Gecersiz Sifre",
+    "chooseAuthority": "Yetki Secimi", 
+    "upload_invoice": "Fature Yukle"
+}

@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+
+  prod_server:
+    build:
+      context: .
+      dockerfile: ./apps/server/Dockerfile
+
+    container_name: prod_server
+    expose:
+      - 9000
+    ports:
+      - 9000:9000
+
+  prod_client:
+    build:
+      context: .
+      dockerfile: ./apps/client/Dockerfile
+
+    container_name: prod_client
+
+    expose:
+      - 3000
+    ports:
+      - 3000:3000

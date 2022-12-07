@@ -1,0 +1,50 @@
+{
+    "name": "demo_frontend",
+    "version": "0.0.0",
+    "private": true,
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "dev-db": "cd packages/dev-db && yarn dev-db",
+        "dev-db-build": "cd packages/dev-db && yarn dev-db-build",
+        "lint": "turbo run lint",
+        "prepare": "husky install",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "cleanup": "node ./scripts/cleanup.js",
+        "pubclean": "node ./scripts/removePublic.js",
+        "distcleanup": "./main",
+        "totalclean": "yarn cleanup | yarn pubclean | yarn distcleanup"
+    },
+    "devDependencies": {
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "organize-imports-cli": "^0.9.0",
+        "prettier": "latest",
+        "scripty": "^2.1.0",
+        "turbo": "latest"
+    },
+    "engines": {
+        "npm": ">=7.0.0",
+        "node": ">=14.0.0"
+    },
+    "packageManager": "yarn@1.22.18",
+    "lint-staged": {
+        "apps/**/*.{js,ts,jsx,tsx}": [
+            "eslint --fix",
+            "organize-imports-cli",
+            "prettier --write --ignore-unknown"
+        ],
+        "packages/ui/**/*.{js,ts,jsx,tsx}": [
+            "eslint --fix",
+            "organize-imports-cli",
+            "prettier --write --ignore-unknown"
+        ],
+        "*.json": [
+            "prettier --write"
+        ]
+    }
+}

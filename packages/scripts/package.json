@@ -1,0 +1,14 @@
+{
+    "name": "scripts",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "license": "MIT",
+    "devDependencies": {
+        "axios": "^0.27.2",
+        "config": "*",
+        "ipaddr.js": "^2.0.1",
+        "locales": "*",
+        "tsconfig": "*",
+        "which": "*"
+    }
+}

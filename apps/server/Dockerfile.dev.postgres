@@ -1,0 +1,10 @@
+FROM postgres:14-alpine
+
+WORKDIR /
+
+COPY ./wait-for.sh ./
+
+COPY ./postgresql.conf /etc/postgresql/postgresql.conf
+
+COPY ./src/seeds/pg_dump.sql /docker-entrypoint-initdb.d/
+
